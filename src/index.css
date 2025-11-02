@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Mythic dark theme - deep blacks and mystical golden accents */
+    --background: 240 10% 3.9%;
+    --foreground: 45 100% 95%;
+
+    --card: 240 8% 8%;
+    --card-foreground: 45 100% 95%;
+
+    --popover: 240 8% 8%;
+    --popover-foreground: 45 100% 95%;
+
+    /* Golden primary for titles and CTAs */
+    --primary: 45 97% 54%;
+    --primary-foreground: 240 10% 3.9%;
+
+    /* Subtle card backgrounds */
+    --secondary: 240 6% 12%;
+    --secondary-foreground: 45 100% 95%;
+
+    --muted: 240 6% 15%;
+    --muted-foreground: 45 20% 70%;
+
+    /* Blue mystical accent */
+    --accent: 240 65% 55%;
+    --accent-foreground: 45 100% 95%;
+
+    /* Red for warnings/wrong answers */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 45 100% 95%;
+
+    /* Green for success/correct answers */
+    --success: 140 70% 45%;
+    --success-foreground: 45 100% 95%;
+
+    --border: 240 6% 20%;
+    --input: 240 6% 12%;
+    --ring: 45 97% 54%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(45 97% 54%) 0%, hsl(35 95% 50%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(240 8% 10%) 0%, hsl(240 8% 6%) 100%);
+    
+    /* Shadows */
+    --shadow-golden: 0 4px 20px hsl(45 97% 54% / 0.15);
+    --shadow-card: 0 8px 24px hsl(240 10% 0% / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

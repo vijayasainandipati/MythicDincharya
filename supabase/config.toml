@@ -1,0 +1,4 @@
+project_id = "izdzsioyclhunhjehmci"
+
+[functions.chat-with-legends]
+verify_jwt = false
